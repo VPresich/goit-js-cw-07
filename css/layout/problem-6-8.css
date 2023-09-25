@@ -1,0 +1,55 @@
+.thead-row-table {
+  padding: 4px;
+  font-size: 16px;
+  text-align: left;
+  color: var(--slate);
+}
+
+.tbody-row-table {
+  padding: 4px;
+  font-size: 14px;
+  text-align: left;
+  color: var(--slate);
+}
+
+.publication-table {
+  color: var(--slate);
+}
+
+.telem-number {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-title {
+  width: 500px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-type {
+  width: 100px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+.telem-where {
+  width: 400px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-volume {
+  width: 80px;
+  text-align: center;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.telem-authors {
+  width: 300px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}

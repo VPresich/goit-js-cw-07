@@ -1,0 +1,4 @@
+.navigation-item-link-current {
+  color: var(--iris);
+  font-weight: 600;
+}
