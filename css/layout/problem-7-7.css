@@ -1,0 +1,25 @@
+@import 'modal-form-shocolad.css';
+
+.leave-review-btn {
+  display: block;
+  width: 222px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 1px solid var(--accent-color);
+  color: var(--primary-color);
+  background-color: #ffffff;
+  transition: color 250ms ease-out, background-color 250ms ease-out;
+}
+
+.leave-review-btn:hover,
+.leave-review-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+
+

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class-work-06</title>
+    <title>class-work-07-03</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,7 +65,7 @@
           </li>
           <li class="site-navigation-item">
             <a class="site-navigation-item-link" href="./problem-7-9.html"
-              >Problem 6-9</a
+              >Problem 7-9</a
             >
           </li>
           <li class="site-navigation-item">
@@ -77,12 +77,39 @@
       </div>
     </header>
     <main>
+      <!-- ==================  Завдання coбытия в инпутах ================ -->
       <section class="section-layout">
-        <div class="container home-page-container">
-          <h1 class="title-home">Задачі з лекції JS - 6</h1>
-          <h2 class="name-stud">Валентина Александрова</h2>
+        <div class="container">
+          <h2 class="visually-hidden">
+            Урок JS-6-2 - обработчики событий - события в инпутах
+          </h2>
+
+          <form class="licence-form">
+            <label class="licence-input-label">
+              Имя:
+              <input class="licence-input js-licence-input" type="text" name="name" />
+            </label>
+            
+            <div class="licence-checlbox-container">
+              <label class="licence-checkbox-label">
+                <input
+                  class="licence-checbox js-licence-checbox"
+                  type="checkbox"
+                  name="password"
+                />
+                Принимаю лицензионное соглашение
+              </label>
+            </div>
+
+            <button class="licence-button js-licence-button" type="submit" disabled>
+              Зарегистрироваться как &nbsp; <span>Аноним</span>
+            </button>
+          </form>
         </div>
       </section>
+
+      <!-- Скрипт до завдання 7-3 -->
+      <script src="./scripts/script-7-03-input-events.js" type="module"></script>
     </main>
   </body>
 </html>

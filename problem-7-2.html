@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class-work-06</title>
+    <title>class-work-07-02</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,7 +65,7 @@
           </li>
           <li class="site-navigation-item">
             <a class="site-navigation-item-link" href="./problem-7-9.html"
-              >Problem 6-9</a
+              >Problem 7-9</a
             >
           </li>
           <li class="site-navigation-item">
@@ -77,12 +77,67 @@
       </div>
     </header>
     <main>
+      <!-- ==================  Завдання events in form ================ -->
       <section class="section-layout">
-        <div class="container home-page-container">
-          <h1 class="title-home">Задачі з лекції JS - 6</h1>
-          <h2 class="name-stud">Валентина Александрова</h2>
+        <div class="container">
+          <h2 class="visually-hidden">
+            Урок JS-6-2 - обработчики событий - события в форме
+          </h2>
+
+          <form class="login-form js-login-form">
+            <label class="login-label"
+              >Email:
+              <input class="login-input" type="email" name="email" />
+            </label>
+
+            <label class="login-label"
+              >Password:
+              <input class="login-input" type="password" name="password" />
+            </label>
+
+            <div class="group-radio-buttons" role="group">
+              <p class="group-radio-buttons-title">Выберите тип подписки:</p>
+              <label class="login-radion-label">
+                <input
+                  class="login-radio"
+                  type="radio"
+                  name="subscription"
+                  value="free"
+                  checked
+                />
+                Free
+              </label>
+              <label class="login-radion-label">
+                <input
+                  class="login-radio"
+                  type="radio"
+                  name="subscription"
+                  value="basic"
+                />
+                Basic
+              </label>
+              <label class="login-radion-label">
+                <input
+                  class="login-radio"
+                  type="radio"
+                  name="subscription"
+                  value="premium"
+                />
+                Premium
+              </label>
+            </div>
+            <button class="login-button js-login-button" type="submit">
+              Login
+            </button>
+          </form>
         </div>
       </section>
+
+      <!-- Скрипт до завдання 7-2 -->
+      <script
+        src="./scripts/script-7-02-login-form-events.js"
+        type="module"
+      ></script>
     </main>
   </body>
 </html>

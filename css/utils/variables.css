@@ -10,4 +10,9 @@
     --cornflower: #e7e9fc; /* hairlines, accent collor */
     --green: #31d0aa; /* valid fields, success messages*/
     --dairy: #fcfcfc; /* modal background */
+
+    --primary-color: #111111;
+    --secondary-color: #ffffff;
+    --accent-color: #fd9222;
+  
   }

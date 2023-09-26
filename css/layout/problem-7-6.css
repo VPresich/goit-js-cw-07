@@ -1,0 +1,29 @@
+
+@import 'modal-form-order.css';
+
+.open-form-btn {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--iris);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  width: 200px;
+  height: 56px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-form-btn:hover,
+.open-form-btn:focus {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+
+

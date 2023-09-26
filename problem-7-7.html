@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class-work-06-07</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header-page">
+      <div class="container">
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./index.html">Home</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-1.html"
+              >Problem 7-1</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-2.html"
+              >Problem 7-2</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-3.html"
+              >Problem 7-3</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-4.html"
+              >Problem 7-4</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-5.html"
+              >Problem 7-5</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-6.html"
+              >Problem 7-6</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-7.html"
+              >Problem 7-7</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-8.html"
+              >Problem 7-8</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-9.html"
+              >Problem 7-9</a
+            >
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="./problem-7-10.html"
+              >Problem 7-10</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- ==================  7-7 ================ -->
+      <section class="section-layout">
+        <div class="container">
+          <h2 class="visually-hidden">7-7 Открытие формы Шоколад</h2>
+          <div class="products-container js-products-container">
+            <button class="leave-review-btn js-leave-review-btn" type="button">
+              Открыть форму
+            </button>
+          </div>
+        </div>
+      </section>
+<!-- ========================= BACKDROP WITH MODAL WINDOW ===============-->
+    <div class="backdrop modal-is-open">
+      <div class="modal">
+        <button class="close-btn">
+          <svg
+            class="close-btn-icon"
+            width="28"
+            height="28"
+            aria-label="modal close icon"
+          >
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="review-form-description">
+          leave a review about <span class="accent-color">our chocolate</span>
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="text"
+                id="user-name"
+                name="user_name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Oleksii"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="user icon"
+              >
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >Email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="email"
+                id="user-email"
+                name="user_email"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="email icon"
+              >
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone"
+              >Phone number</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="tel"
+                id="user-phone"
+                name="user_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="phone icon"
+              >
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="review-form-comment"
+              name="user_comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user_privacy"
+              value="true"
+              required
+              checked
+            />
+            <label for="user-privacy" class="review-form-checkbox-label">
+              <span class="review-form-own-checkbox">
+                <svg
+                  class="review-form-own-checkbox-icon"
+                  width="10"
+                  height="9"
+                  aria-label="checkmark icon"
+                >
+                  <use href="./images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="review-form-privacy-link accent-color" href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="review-form-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ======================= Скрипт до завдання 7-7 ================= -->
+    <script
+      src="./scripts/script-7-open-close-modal-window-shocolad.js"
+      type="module"
+    ></script>
+    </main>
+  </body>
+</html>
