@@ -1,4 +1,73 @@
-.btn-styles {
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--navyblue);
+}
+
+.game-content {
+  width: 154px;
+  height: 154px;
+  border: 2px solid var(--navyblue);
+}
+
+.game-item {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid var(--navyblue);
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.game-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.game-result-overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent-color);
+  background-image: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0) 100%
+  );
+  backdrop-filter: blur(7.5px);
+  transform: translateY(100%);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.game-result-overlay.is-show {
+  transform: translateY(0);
+}
+
+/* .game-overlay-wrapper:hover .game-result-overlay {
+  transform: translateY(0);
+} */
+
+/* .btn-styles {
   cursor: pointer;
   background-color: var(--iris);
   color: var(--cloud);
@@ -46,8 +115,7 @@
 .btn-styles:focus {
   background-color: var(--ocean);
   color: var(--white);
-}
-
+} */
 
 /* .gallery {
   display: flex;
